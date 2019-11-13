@@ -204,6 +204,7 @@ p {
 .whatwedo .wwd img {
   opacity: 1;
   width: 90%;
+  height: auto;
   padding: 10px;
   margin-top: 20px;
   border-radius: 2rem;
@@ -237,10 +238,6 @@ html {
   }
   body .about h1 {
     font-size: 2rem;
-  }
-  body .about .whatwedo img {
-    height: auto;
-    width: 100%;
   }
 }
 /* Sidebar */
