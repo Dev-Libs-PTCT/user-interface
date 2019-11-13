@@ -382,7 +382,7 @@ body.is-preload #sidebar nav ul li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 98%;
+    width: 95%;
   }
 }
 body .people {
