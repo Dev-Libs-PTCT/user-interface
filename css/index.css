@@ -380,6 +380,8 @@ body.is-preload #sidebar nav ul li {
 @media screen and (max-width: 536px) {
   #sidebar {
     display: flex;
+    padding-right: 21%;
+    align-content: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 95%;
