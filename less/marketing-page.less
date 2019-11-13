@@ -17,10 +17,12 @@ body {
     color: @white;
      width: 75%;
      margin: 0 auto;
+     align-items: center;
     //  opacity: 1;
     // background-color: @main-color;
     // justify-content: center;
     // display: flex;
+    // flex-direction: column;
 
     nav {
         display: flex;
@@ -89,11 +91,11 @@ p{
 
   .whatwedo{
      
-      padding: 25px;
+      // padding: 25px;
+      width: 100%;
    .wwd {
-        width: 100%;
         height: auto;
-        margin-bottom: 25px;
+        // margin-bottom: 25px;
         text-align: center;
         // display: flex;
         justify-content: center;
@@ -101,6 +103,9 @@ p{
         background-color: @accent-color;
         color:@text-color-dark;
         border-radius: 2rem;
+        max-width: 700px;
+        margin: 0 auto 25px;
+        width: 100%;
 
         p{
           padding: 15px;
@@ -118,7 +123,9 @@ p{
 
         button{
           .buttonmix;
+          user-select: none;
           font-size: 2rem;
+          cursor: pointer;
           &:hover {
             background: @accent-color;
             color: @white;
@@ -146,7 +153,7 @@ p{
     body{
       
       .container{
-        width: 100%;
+        width: 75%;
       }
       .about{
         h1{
@@ -159,14 +166,7 @@ p{
   
 }
   @media(max-width: 1000px) {
-    img{
-      opacity: 1;
-      width: 90%;
-      height: auto;
-      padding: 10px;
-      margin-top: 20px;
-      border-radius: 2rem;
-    }
+  
 
   }
 

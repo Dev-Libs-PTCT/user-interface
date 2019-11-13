@@ -140,6 +140,7 @@ body {
   color: #FFFFFF;
   width: 75%;
   margin: 0 auto;
+  align-items: center;
 }
 .container nav {
   display: flex;
@@ -183,18 +184,19 @@ p {
   font-size: 2rem;
 }
 .whatwedo {
-  padding: 25px;
+  width: 100%;
 }
 .whatwedo .wwd {
-  width: 100%;
   height: auto;
-  margin-bottom: 25px;
   text-align: center;
   justify-content: center;
   flex-wrap: wrap;
   background-color: #6480f8;
   color: #595959;
   border-radius: 2rem;
+  max-width: 700px;
+  margin: 0 auto 25px;
+  width: 100%;
 }
 .whatwedo .wwd p {
   padding: 15px;
@@ -216,7 +218,9 @@ p {
   background: #552eb1;
   margin: 15px;
   font-family: 'Open Sans Condensed', sans-serif;
+  user-select: none;
   font-size: 2rem;
+  cursor: pointer;
 }
 .whatwedo .wwd button:hover {
   background: #6480f8;
@@ -233,20 +237,10 @@ html {
 }
 @media (max-width: 500px) {
   body .container {
-    width: 100%;
+    width: 75%;
   }
   body .about h1 {
     font-size: 2rem;
-  }
-}
-@media (max-width: 1000px) {
-  img {
-    opacity: 1;
-    width: 90%;
-    height: auto;
-    padding: 10px;
-    margin-top: 20px;
-    border-radius: 2rem;
   }
 }
 /* Sidebar */
@@ -263,6 +257,7 @@ html {
   top: 0;
   width: 15rem;
   z-index: 10000;
+  user-select: none;
 }
 #sidebar > .inner {
   display: flex;
