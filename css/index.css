@@ -219,7 +219,7 @@ p {
   font-size: 2rem;
 }
 .whatwedo .wwd button:hover {
-  background: #6d6d3d;
+  background: #6480f8;
   color: #FFFFFF;
 }
 footer {
@@ -237,6 +237,10 @@ html {
   }
   body .about h1 {
     font-size: 2rem;
+  }
+  body .about .whatwedo img {
+    height: auto;
+    width: 100%;
   }
 }
 /* Sidebar */
