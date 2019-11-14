@@ -11,7 +11,7 @@
 </div>
   
 </head>
-<body id="bodyloader" onclick="openFullscreen('bodyloader'); closeFullscreen('bodyloader')">
+<body id="bodyloader" onclick="toggleFullScreen()">
   <!-- "window.open('pageName.html', 'test', 'fullscreen=yes')"
   "openFullscreen('bodyloader')" -->
   <div class="wrapper">
@@ -72,9 +72,10 @@
           <script>
             /* Get the element you want displayed in fullscreen mode (a video in this example): */
             var elem = document.getElementById("bodyloader");
-            
-            
+            var isFullscreen = false;
+                     
             function openFullscreen() {
+              isFullscreen = true;
               if (elem.requestFullscreen) {
                 elem.requestFullscreen();
               } else if (elem.mozRequestFullScreen) { /* Firefox */
@@ -84,30 +85,30 @@
               } else if (elem.msRequestFullscreen) { /* IE/Edge */
                 elem.msRequestFullscreen();
               }
-              function closeFullscreen(){
-              if (elem.exitFullscreen) {
-                elem.exitFullscreen();
-          } else if (elem.webkitExitFullscreen) {
-            elem.webkitExitFullscreen();
-          } else if (elem.mozCancelFullScreen) {
-              elem.mozCancelFullScreen();
-          } else if (elem.msExitFullscreen) {
-              elem.msExitFullscreen();
-            }
-            else if (closeFullscreen())
-          console.log('can i see this???')
-        }
               }
-              // based on https://stackoverflow.com/questions/36672561/how-to-exit-fullscreen-onclick-using-javascript
+             
+              function closeFullscreen(){
+                isFullscreen = false;
+              if (document.exitFullscreen) {
+                document.exitFullscreen();
+          } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+          } else if (document.mozCancelFullScreen) {
+              document.mozCancelFullscreen();
+          } else if (document.msExitFullscreen) {
+              document.msExitFullscreen();
+            }
+          
+          
+        }
         function toggleFullScreen() {
-        if (openFullscreen()) {
-          exitFullScreen();
+        if (isFullscreen) {
+          closeFullscreen();
          } else {
           openFullscreen();
            }
            }
                                       
-
             </script>
         </div>
       </div>
