@@ -7,9 +7,13 @@
   <link rel="stylesheet" href="css/index.css" />
 <!-- <script src="https://unpkg.com/blockstack@19.4.0-beta.1/dist/blockstack.js" integrity="sha384-UnkhaTA3XqTl/a79lTWO+C85bbXyM8IIUYtSLfrkkNQJcCxocVZv8nHaMzrvS9ZH" crossorigin="anonymous"></script> -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+
+</div>
   
 </head>
-<body id="body" onload="openFullscreen()">
+<body id="bodyloader" onclick="openFullscreen('bodyloader')">
+  <!-- "window.open('pageName.html', 'test', 'fullscreen=yes')"
+  "openFullscreen('bodyloader')" -->
   <div class="container">
       
         
@@ -65,7 +69,7 @@
           </footer>
           <script>
             /* Get the element you want displayed in fullscreen mode (a video in this example): */
-            var elem = document.getElementById("body");
+            var elem = document.getElementById("bodyloader");
             
             
             function openFullscreen() {
