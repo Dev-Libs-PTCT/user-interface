@@ -83,8 +83,19 @@
                 elem.webkitRequestFullscreen();
               } else if (elem.msRequestFullscreen) { /* IE/Edge */
                 elem.msRequestFullscreen();
+              }else {
+          if (elem.exitFullscreen) {
+              elem.exitFullscreen();
+          } else if (elem.webkitExitFullscreen) {
+              elem.webkitExitFullscreen();
+          } else if (elem.mozCancelFullScreen) {
+              elem.mozCancelFullScreen();
+          } else if (elem.msExitFullscreen) {
+              elem.msExitFullscreen();
+          }
+      }
               }
-            }
+
             </script>
         </div>
       </div>
