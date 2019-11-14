@@ -4,7 +4,7 @@
 body {
   
   font-family: 'Open Sans Condensed', sans-serif;
-  background-image: url(https://images.pexels.com/photos/1650032/pexels-photo-1650032.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: url(/img/fancy-pants.jpg);
   width: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -17,10 +17,12 @@ body {
     color: @white;
      width: 75%;
      margin: 0 auto;
+     align-items: center;
     //  opacity: 1;
     // background-color: @main-color;
     // justify-content: center;
     // display: flex;
+    // flex-direction: column;
 
     nav {
         display: flex;
@@ -49,14 +51,14 @@ body {
         h1{
           font-size: 7rem;
           // padding: 15px;
-          color: #333333;
+          color: #ffffff;
           font-weight: bolder;
         
           // position: absolute;
           // top: 50%;
           // left: 50%;
           // // transform: translate(-50%, -50%);
-          text-shadow: 2px 2px @main-color;
+          text-shadow: 2px 2px 10px blue;
 
         }
 
@@ -64,7 +66,7 @@ body {
           margin-top: 1.2rem;
           width: 90%;
           font-size: 2rem;
-          color: #333333;
+          color: #d1d0d0;
           font-weight: bold;
           // position: absolute;
           // top: 90%;
@@ -89,18 +91,21 @@ p{
 
   .whatwedo{
      
-      padding: 25px;
+      // padding: 25px;
+      width: 100%;
    .wwd {
-        width: 100%;
         height: auto;
-        margin-bottom: 25px;
+        // margin-bottom: 25px;
         text-align: center;
-        display: flex;
+        // display: flex;
         justify-content: center;
         flex-wrap: wrap;
         background-color: @accent-color;
         color:@text-color-dark;
         border-radius: 2rem;
+        max-width: 700px;
+        margin: 0 auto 25px;
+        width: 100%;
 
         p{
           padding: 15px;
@@ -110,6 +115,7 @@ p{
         img{
           opacity: 1;
           width: 90%;
+          height: auto;
           padding: 10px;
           margin-top: 20px;
           border-radius: 2rem;
@@ -117,9 +123,11 @@ p{
 
         button{
           .buttonmix;
+          user-select: none;
           font-size: 2rem;
+          cursor: pointer;
           &:hover {
-            background:#6d6d3d;
+            background: @accent-color;
             color: @white;
           }
         }
@@ -145,7 +153,7 @@ p{
     body{
       
       .container{
-        width: 100%;
+        width: 75%;
       }
       .about{
         h1{
@@ -158,7 +166,8 @@ p{
   
 }
   @media(max-width: 1000px) {
-   
+  
+
   }
 
 
