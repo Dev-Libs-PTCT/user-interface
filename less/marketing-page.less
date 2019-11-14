@@ -171,3 +171,37 @@ p{
   }
 
 
+  body:fullscreen {
+    overflow: visible; width:0 !important;
+  }
+  
+  body::-webkit-full-screen {
+    overflow: visible; width:0 !important;
+  }
+ 
+body:fullscreen {
+  overflow: scroll; width: 0 !important;
+}
+body:-ms-fullscreen {
+  overflow: scroll !important;
+}
+body:-webkit-full-screen {
+  // overflow: scroll !important;
+  width: 0;
+  overflow-x: hidden; 
+  overflow-y: scroll; 
+}
+body:-moz-full-screen {
+  overflow: scroll !important;
+}
+body::-webkit-scrollbar { 
+  display: none; 
+} 
+ 
+
+  // -webkit- (Chrome, Safari, newer versions of Opera):
+// .body::-webkit-scrollbar{ width: 0 !important }
+// -moz- (Firefox):
+// .element { overflow: -moz-scrollbars-none; }
+// -ms- (Internet Explorer +10):
+// .element { -ms-overflow-style: none; }
