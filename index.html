@@ -5,11 +5,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="css/index.css" />
-<script src="https://unpkg.com/blockstack@19.4.0-beta.1/dist/blockstack.js" integrity="sha384-UnkhaTA3XqTl/a79lTWO+C85bbXyM8IIUYtSLfrkkNQJcCxocVZv8nHaMzrvS9ZH" crossorigin="anonymous"></script>
+<!-- <script src="https://unpkg.com/blockstack@19.4.0-beta.1/dist/blockstack.js" integrity="sha384-UnkhaTA3XqTl/a79lTWO+C85bbXyM8IIUYtSLfrkkNQJcCxocVZv8nHaMzrvS9ZH" crossorigin="anonymous"></script> -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+
+</div>
   
 </head>
-<body>
+<body id="bodyloader" onclick="openFullscreen('bodyloader'); closeFullscreen('bodyloader')">
+  <!-- "window.open('pageName.html', 'test', 'fullscreen=yes')"
+  "openFullscreen('bodyloader')" -->
+  <div class="wrapper">
   <div class="container">
       
         
@@ -57,13 +62,55 @@
           
 
     </div>
+  
           <!--put social media links????-->
 
           <footer>
             <p> Dev-Libs 2019</p>
 
           </footer>
+          <script>
+            /* Get the element you want displayed in fullscreen mode (a video in this example): */
+            var elem = document.getElementById("bodyloader");
+            
+            
+            function openFullscreen() {
+              if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+              } else if (elem.mozRequestFullScreen) { /* Firefox */
+                elem.mozRequestFullScreen();
+              } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                elem.webkitRequestFullscreen();
+              } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                elem.msRequestFullscreen();
+              }
+              function closeFullscreen(){
+              if (elem.exitFullscreen) {
+                elem.exitFullscreen();
+          } else if (elem.webkitExitFullscreen) {
+            elem.webkitExitFullscreen();
+          } else if (elem.mozCancelFullScreen) {
+              elem.mozCancelFullScreen();
+          } else if (elem.msExitFullscreen) {
+              elem.msExitFullscreen();
+            }
+            else if (closeFullscreen())
+          console.log('can i see this???')
+        }
+              }
+              // based on https://stackoverflow.com/questions/36672561/how-to-exit-fullscreen-onclick-using-javascript
+        function toggleFullScreen() {
+        if (openFullscreen()) {
+          exitFullScreen();
+         } else {
+          openFullscreen();
+           }
+           }
+                                      
+
+            </script>
         </div>
+      </div>
       </body>
       </div>
 </html>

@@ -126,21 +126,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-body {
+body .wrapper {
   font-family: 'Open Sans Condensed', sans-serif;
-  background-image: url(/img/fancy-pants.jpg);
-  width: 100%;
-  background-attachment: fixed;
+  width: 100vw;
+  background-image: url(/img/fancy-pants.jpg) !important;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
+  background-repeat: repeat;
+  background-size: 50%;
 }
 .container {
   color: #FFFFFF;
   width: 75%;
   margin: 0 auto;
   align-items: center;
+  opacity: 1;
 }
 .container nav {
   display: flex;
@@ -197,6 +196,7 @@ p {
   max-width: 700px;
   margin: 0 auto 25px;
   width: 100%;
+  transition: all 0.2s ease;
 }
 .whatwedo .wwd p {
   padding: 15px;
@@ -242,6 +242,37 @@ html {
   body .about h1 {
     font-size: 2rem;
   }
+}
+@media (device-width: 100vw) and (device-height: 100vh) {
+  .whatwedo .wwd {
+    max-width: 900px;
+  }
+}
+body:fullscreen {
+  overflow: visible;
+  width: 0 !important;
+}
+body::-webkit-full-screen {
+  overflow: visible;
+  width: 0 !important;
+}
+body:fullscreen {
+  overflow: scroll;
+  width: 0 !important;
+}
+body:-ms-fullscreen {
+  overflow: scroll !important;
+}
+body:-webkit-full-screen {
+  width: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+body:-moz-full-screen {
+  overflow: scroll !important;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 /* Sidebar */
 #sidebar {

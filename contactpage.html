@@ -8,11 +8,15 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
       <link rel="stylesheet" href="css/contactpage.css" />
-      
+      <script>
+        function goBack() {
+          window.history.go(-2)
+        }
+        </script>
       
     </head>
     
-    <a href="index.html" class="button" style="background:white; color:black; border: black; ">Home</a>
+    <a href="index.html" class="button" style="background:white; color:black; border: black;">Home</a>
     
 
 
@@ -32,13 +36,13 @@
         <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
       </fieldset>
       <fieldset>
-        <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+        <input placeholder="Your Web Site (optional)" type="url" tabindex="4" optional>
       </fieldset>
       <fieldset>
         <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
       </fieldset>
       <fieldset>
-        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" onclick="goBack()">Submit</button>
       </fieldset>
     <!-- </form> -->
     </form>
