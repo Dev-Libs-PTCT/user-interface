@@ -11,7 +11,7 @@
 </div>
   
 </head>
-<body id="bodyloader" onclick="openFullscreen('bodyloader')">
+<body id="bodyloader" onclick="openFullscreen('bodyloader'); closeFullscreen('bodyloader')">
   <!-- "window.open('pageName.html', 'test', 'fullscreen=yes')"
   "openFullscreen('bodyloader')" -->
   <div class="wrapper">
@@ -83,18 +83,30 @@
                 elem.webkitRequestFullscreen();
               } else if (elem.msRequestFullscreen) { /* IE/Edge */
                 elem.msRequestFullscreen();
-              }else {
-          if (elem.exitFullscreen) {
-              elem.exitFullscreen();
+              }
+              function closeFullscreen(){
+              if (elem.exitFullscreen) {
+                elem.exitFullscreen();
           } else if (elem.webkitExitFullscreen) {
-              elem.webkitExitFullscreen();
+            elem.webkitExitFullscreen();
           } else if (elem.mozCancelFullScreen) {
               elem.mozCancelFullScreen();
           } else if (elem.msExitFullscreen) {
               elem.msExitFullscreen();
-          }
-      }
+            }
+            else if (closeFullscreen())
+          console.log('can i see this???')
+        }
               }
+              // based on https://stackoverflow.com/questions/36672561/how-to-exit-fullscreen-onclick-using-javascript
+        function toggleFullScreen() {
+        if (openFullscreen()) {
+          exitFullScreen();
+         } else {
+          openFullscreen();
+           }
+           }
+                                      
 
             </script>
         </div>
