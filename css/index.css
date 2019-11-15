@@ -423,6 +423,9 @@ body.is-preload #sidebar nav ul li {
     width: 95%;
   }
 }
+body {
+  background-image: url(/img/dark-wood.jpg);
+}
 body .people {
   display: flex;
   justify-content: center;
@@ -455,12 +458,13 @@ body .people .title .person img {
   border-radius: 8rem;
 }
 body .people .title .person {
-  background-color: rgba(2, 233, 125, 0.842);
+  background-color: #6480f8;
 }
 .people h2,
 h1 {
   font-size: 2rem;
   text-shadow: 2px 3px 5px;
+  color: rgba(255, 255, 255, 0.603);
 }
 @media (max-width: 600px) {
   body .people .title .person {
