@@ -8,8 +8,9 @@ body{
         text-align: center;
         padding-top: 1.5em;
         padding-bottom: 1.5em;   
-
-        background-color: #adbf97;   
+        position: fixed;
+        overflow-x: hidden;
+        background-color: @accent-color;   
         display: flex;
         flex-direction: column;
         @media @tablet {
@@ -20,14 +21,22 @@ body{
 
         }
         border-radius: 2em;
+        a:hover {
+            background-color: @content-bg-color;
+        }
         a {
+            text-decoration: none;
+            text-align: center;
             padding: 1em;
 			color: black;
             font-size: 1.5em;
+
             @media @mobile {
                 font-size: 1em;
+                padding-left:.5em;
+                padding-right: .5em;
             }
-            text-align: center;
+
  @media @tablet {
      width: 100%;
  }
