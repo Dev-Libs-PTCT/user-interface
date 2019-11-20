@@ -181,12 +181,14 @@ body .home-container .home-box {
 body .home-container .home-box .homeimg {
   border-radius: 2em;
   margin: 1em 3em;
-  flex: 1 1 1;
+  flex: 0 1 auto;
   display: flex;
   justify-content: center;
 }
 body .home-container .home-box .homeimg img {
   border-radius: 2em;
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 500px) {
   body .home-container .home-box .homeimg {
