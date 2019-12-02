@@ -136,7 +136,8 @@ a:hover {
 }
 body {
   height: 100%;
-  background-color: red;
+  background-color: #e22e5f;
+  color: #292928;
 }
 body p {
   font-size: 1.5em;
@@ -178,7 +179,6 @@ h2 {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: fuchsia;
 }
 .container .home-container {
   padding-top: 7em;
@@ -198,14 +198,14 @@ h2 {
 }
 .container .home-container .home-box {
   width: 30%;
-  background-color: yellow;
+  background-color: #9cec5b;
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 1em;
 }
 .container .home-container .home-box .play {
-  background-color: pink;
-  color: black;
+  background-color: #49a2d2;
+  color: #292928;
   padding: 15px 36px;
   text-align: center;
   text-decoration: none;
@@ -240,11 +240,11 @@ h2 {
 }
 footer {
   text-align: center;
-  background-color: yellowgreen;
+  background-color: #49a2d2;
   padding: 1em;
 }
 body .container .top-container {
-  background-color: rgba(255, 0, 153, 0.8);
+  background-color: rgba(247, 146, 86, 0.8);
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -268,11 +268,11 @@ body .container .top-container .navbar {
   }
 }
 body .container .top-container .navbar :hover {
-  background-color: forestgreen;
+  background-color: #9cec5b;
   border-radius: 0.5em;
 }
 body .container .top-container .navbar a {
-  color: dodgerblue;
+  color: #2a628f;
   text-align: center;
   padding: 14px 10px;
   text-decoration: none;
@@ -319,7 +319,7 @@ body .home-container .team-container {
   }
 }
 body .home-container .team-container .team-content {
-  background-color: yellow;
+  background-color: #9cec5b;
   border-radius: 2em;
   padding: 3em;
   margin: 1em;
@@ -332,10 +332,11 @@ body .home-container .team-container .team-content img {
   border-radius: 1em;
 }
 .contact-container {
-  background-color: yellow;
+  background-color: #9cec5b;
   padding: 3em;
   border-radius: 1em;
   width: 300px;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -343,8 +344,8 @@ body .home-container .team-container .team-content img {
   margin: 1em;
 }
 .contact-container fieldset button {
-  background-color: pink;
-  color: black;
+  background-color: #49a2d2;
+  color: #292928;
   padding: 15px 36px;
   text-align: center;
   text-decoration: none;
